@@ -1,7 +1,7 @@
 ﻿import xbmc, xbmcgui, os, xbmcaddon, stat
 
-dialog1 = ""
-dialog2 = ""
+dialog1 = "Reboot to Ubuntu..."
+dialog2 = "KODI needs to reboot for Ubuntu"
 
 addon = xbmcaddon.Addon()
 script_path = addon.getAddonInfo('path')
