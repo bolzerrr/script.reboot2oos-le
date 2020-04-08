@@ -17,14 +17,14 @@
 # along with GRUB.  If not, see <http://www.gnu.org/licenses/>.
 
 # Initialize some variables.
-prefix=$1
-exec_prefix=$1
+prefix=$2
+exec_prefix=$2
 bindir=${exec_prefix}/bin
-sbindir=$1/bin
+sbindir=$2/bin
 sysconfdir="${prefix}/etc"
 PACKAGE_NAME=GRUB
 PACKAGE_VERSION=2.04
-datarootdir="$1/share"
+datarootdir="$2/share"
 datadir="${datarootdir}"
 if [ "x$pkgdatadir" = x ]; then
     pkgdatadir="${datadir}/grub"
