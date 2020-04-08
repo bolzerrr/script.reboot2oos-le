@@ -6,7 +6,7 @@ set -e
 
 #####
 GRUB_BOOT_DIR="/var/media/sda4-ata-M4-CT128M4SSD2_0/boot/" #Point to the partition holding grub
-ADDON_LOCATION="/storage/.kodi/addons/script.reboot2oos-le" #Point to the location of the addon in LibreELEC if different
+ADDON_LOCATION="/storage/.kodi/addons/script.reboot2oos-le-ubuntu" #Point to the location of the addon in LibreELEC if different
 REBOOT_TO="gnulinux-simple-6ca743fb-ec67-4dda-918a-543a17b45f6a" #ubuntu
 DEFAULT_OS="LibreELEC" #libreelec
 #####
