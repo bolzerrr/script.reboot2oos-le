@@ -1,7 +1,7 @@
 ﻿import xbmc, xbmcgui, os, xbmcaddon, stat
 
-dialog1 = ""
-dialog2 = ""
+dialog1 = "Reboot to WIN10..."
+dialog2 = "KODI needs to reboot for WIN10"
 
 addon = xbmcaddon.Addon()
 script_path = addon.getAddonInfo('path')

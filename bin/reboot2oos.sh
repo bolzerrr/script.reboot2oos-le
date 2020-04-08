@@ -5,10 +5,10 @@
 set -e
 
 #####
-GRUB_BOOT_DIR="/var/media/###YOUR DEVICE###/boot/" #Point to the partition holding grub
-ADDON_LOCATION="/storage/.kodi/addons/script.reboot2oos-le" #Point to the location of the addon in LibreELEC if different
-REBOOT_TO="" #other os
-DEFAULT_OS="" #libreelec
+GRUB_BOOT_DIR="/var/media/sda4-ata-M4-CT128M4SSD2_0/boot/" #Point to the partition holding grub
+ADDON_LOCATION="/storage/.kodi/addons/script.reboot2oos-le-w10" #Point to the location of the addon in LibreELEC
+REBOOT_TO="osprober-efi-5DD6-6B6C" #win10
+DEFAULT_OS="LibreELEC" #libreelec
 #####
 
 GRUB_CONFIG_FILE=$GRUB_BOOT_DIR"grub/grub.cfg"
