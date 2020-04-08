@@ -7,7 +7,7 @@ set -e
 #####
 GRUB_BOOT_DIR="/var/media/sda4-ata-M4-CT128M4SSD2_0/boot/" #Point to the partition holding grub
 ADDON_LOCATION="/storage/.kodi/addons/script.reboot2oos-le" #Point to the location of the addon in LibreELEC if different
-REBOOT_TO="gnulinux-simple-6ca743fb-ec67-4dda-918a-543a17b45f6a" #ubunt
+REBOOT_TO="gnulinux-simple-6ca743fb-ec67-4dda-918a-543a17b45f6a" #ubuntu
 DEFAULT_OS="LibreELEC" #libreelec
 #####
 
@@ -19,8 +19,8 @@ echo "Reboot once to: $MENU_ENTRY"
 echo "Addon directory location: $ADDON_LOCATION"
 echo "GRUB boot directory location: $GRUB_BOOT_DIR"
 echo "GRUB config file: $GRUB_CONFIG_FILE"
-echo "grub-set-default command: grub-set-default --boot-directory=$GRUB_BOOT_DIR $GRUB_DEFAULT" $ADDON_LOCATION
-echo "grub-reboot command: grub-reboot --boot-directory=$GRUB_BOOT_DIR $MENU_ENTRY" $ADDON_LOCATION
-$ADDON_LOCATION/bin/grub-set-default --boot-directory=$GRUB_BOOT_DIR $GRUB_DEFAULT $ADDON_LOCATION
-$ADDON_LOCATION/bin/grub-reboot --boot-directory=$GRUB_BOOT_DIR $MENU_ENTRY $ADDON_LOCATION
+echo "grub-set-default command: grub-set-default --boot-directory=$GRUB_BOOT_DIR $GRUB_DEFAULT"
+echo "grub-reboot command: grub-reboot --boot-directory=$GRUB_BOOT_DIR $MENU_ENTRY"
+$ADDON_LOCATION/bin/grub-set-default --boot-directory=$GRUB_BOOT_DIR $GRUB_DEFAULT
+$ADDON_LOCATION/bin/grub-reboot --boot-directory=$GRUB_BOOT_DIR $MENU_ENTRY
 reboot
